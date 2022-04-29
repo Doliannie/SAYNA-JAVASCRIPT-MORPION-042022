@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+     <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/morpion.css">
+</head>
+<body>
+
+    <div class="layer">
+        <span id="idX" class="choose1" onclick="choixPion(this.id)">X</span>                   
+        <span id="idO" class="choose1" onclick="choixPion(this.id)">O</span>                   
+        
+    </div>
+    <div class="layer2">
+       <div id="result"></div>
+       <p>Again</p>
+    </div>
+    
+    
+    <div class='container'>
+        <h1 class='name'>Super Morpion</h1>
+
+        <div class='row range'>
+            <div class='col-6 turn player-turn row'>
+                <div class='col-6 score you-score'>0</div>
+                <div class='col-6 you-name'>YOU</div>
+            </div>
+            <div class='col-6 turn cpu-turn row'>
+                <div class='col-6'>CPU</div>
+                <div class='col-6 cpu-score'>0</div>
+            </div>
+        </div>
+        
+        <div class='grid-container'>
+            <button class='grid-item' id='item1' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item2' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item3' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item4' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item5' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item6' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item7' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item8' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item9' onclick='choiseCase(this.id)'></button>
+        </div>
+        <button class="reset">reset</button>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
